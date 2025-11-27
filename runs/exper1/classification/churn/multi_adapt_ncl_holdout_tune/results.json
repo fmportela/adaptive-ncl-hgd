@@ -1,0 +1,18 @@
+{
+    "cross_entropy": 0.21386359632015228,
+    "balanced_accuracy": 0.8376761697173853,
+    "binary_f1_score": 0.752851711026616,
+    "time_in_seconds": 4466.725888068031,
+    "best_hyperparameters": {
+        "optim__lr": 0.30911518431230883,
+        "ens__n_models": 9,
+        "lambda_init": 0.32356437481293354,
+        "lambda_lr": 0.010351249011711312
+    },
+    "hyperparameter_importances": {
+        "optim__lr": 0.467430502894615,
+        "lambda_init": 0.2236102600371227,
+        "ens__n_models": 0.17554265532723207,
+        "lambda_lr": 0.13341658174103024
+    }
+}

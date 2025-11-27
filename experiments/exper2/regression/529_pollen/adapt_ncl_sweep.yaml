@@ -1,0 +1,68 @@
+description: |
+  Hyperparameter sweep of single-lambda adaptive NCL on the 529_pollen dataset.
+
+seed: 1
+run_dir: "./runs/exper2/regression/529_pollen/"
+
+dataset:
+  name: 529_pollen
+  task_type: regression
+  local_cache_dir: data/regression/
+
+trainer:
+  name: adaptive_ncl
+  params:
+    lambda_init: 0.1
+    lambda_lr: 0.01
+    lambda_step_every: 1
+    project_lambda_nonneg: true
+    use_dncc: false
+    hvp_damping: 0.1
+  model:
+    name: mlp
+    params:
+      in_dim: 4
+      out_dim: 1
+      hidden: [64, 32]
+  ensemble:
+    n_models: 5
+  loss:
+    name: mse
+  optim:
+    name: custom
+    lr: 0.0033841920824192497
+  fit:
+    task_type: regression
+    n_epochs: 30
+    batch_size: 32
+    val_batch_size: 32
+    normalize: null
+    log_level: 40
+    class_w: null
+  callbacks:
+    - name: early_stopping
+      params:
+        monitor: "val_loss"
+        mode: "min"
+        patience: 30
+        min_delta: 0.001
+        restore_best: True
+  
+preprocessing:
+  scaler:
+    name: standard
+
+mode: sweep
+
+modes: 
+  sweep:
+    ratios:
+      train: 0.7
+      val: 0.1
+      test: 0.2
+    stratify: false
+    metrics: [mse, rmse, mae]
+    diversity_metrics: [pairwise_pearson_correlation, mean_variance_around_ensemble]
+    params:
+      lambda_init: [0.0, 0.5, 0.9]
+      lambda_lr: [0.0, 0.05, 0.1]

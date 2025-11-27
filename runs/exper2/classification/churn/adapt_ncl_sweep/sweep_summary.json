@@ -1,0 +1,111 @@
+{
+    "sweep_lambda_init=0.0__lambda_lr=0.0": {
+        "cross_entropy": 0.24997290968894958,
+        "balanced_accuracy": 0.8762621884262585,
+        "binary_f1_score": 0.7635135135135135,
+        "disagreement": 0.07139285800180264,
+        "mean_pairwise_js_divergence": 0.03840714885986277,
+        "time_in_seconds": 63.67236548900837,
+        "params": {
+            "lambda_init": 0.0,
+            "lambda_lr": 0.0
+        }
+    },
+    "sweep_lambda_init=0.0__lambda_lr=0.1": {
+        "cross_entropy": 0.26291316747665405,
+        "balanced_accuracy": 0.8727697553645588,
+        "binary_f1_score": 0.7483443708609272,
+        "disagreement": 0.07042857179684299,
+        "mean_pairwise_js_divergence": 0.040151914315564294,
+        "time_in_seconds": 58.138602574996185,
+        "params": {
+            "lambda_init": 0.0,
+            "lambda_lr": 0.1
+        }
+    },
+    "sweep_lambda_init=0.0__lambda_lr=0.5": {
+        "cross_entropy": 0.24520233273506165,
+        "balanced_accuracy": 0.871390946094337,
+        "binary_f1_score": 0.7898550724637681,
+        "disagreement": 0.16932142432779074,
+        "mean_pairwise_js_divergence": 0.13483036595529743,
+        "time_in_seconds": 58.68154256400885,
+        "params": {
+            "lambda_init": 0.0,
+            "lambda_lr": 0.5
+        }
+    },
+    "sweep_lambda_init=0.5__lambda_lr=0.0": {
+        "cross_entropy": 0.2515876293182373,
+        "balanced_accuracy": 0.8626061972110073,
+        "binary_f1_score": 0.7605633802816901,
+        "disagreement": 0.0640357139387301,
+        "mean_pairwise_js_divergence": 0.03827764552884868,
+        "time_in_seconds": 56.98827891703695,
+        "params": {
+            "lambda_init": 0.5,
+            "lambda_lr": 0.0
+        }
+    },
+    "sweep_lambda_init=0.5__lambda_lr=0.1": {
+        "cross_entropy": 0.27378442883491516,
+        "balanced_accuracy": 0.8709698726046285,
+        "binary_f1_score": 0.7516778523489933,
+        "disagreement": 0.10542857154671635,
+        "mean_pairwise_js_divergence": 0.06159743573516607,
+        "time_in_seconds": 55.187133010011166,
+        "params": {
+            "lambda_init": 0.5,
+            "lambda_lr": 0.1
+        }
+    },
+    "sweep_lambda_init=0.5__lambda_lr=0.5": {
+        "cross_entropy": 0.24682223796844482,
+        "balanced_accuracy": 0.8691163236156176,
+        "binary_f1_score": 0.7665505226480837,
+        "disagreement": 0.151535712448614,
+        "mean_pairwise_js_divergence": 0.11085990111210517,
+        "time_in_seconds": 54.82221841701539,
+        "params": {
+            "lambda_init": 0.5,
+            "lambda_lr": 0.5
+        }
+    },
+    "sweep_lambda_init=0.9__lambda_lr=0.0": {
+        "cross_entropy": 0.2773638367652893,
+        "balanced_accuracy": 0.8536604496404363,
+        "binary_f1_score": 0.7675276752767528,
+        "disagreement": 0.052642857522836754,
+        "mean_pairwise_js_divergence": 0.03279437656913485,
+        "time_in_seconds": 55.14533738599857,
+        "params": {
+            "lambda_init": 0.9,
+            "lambda_lr": 0.0
+        }
+    },
+    "sweep_lambda_init=0.9__lambda_lr=0.1": {
+        "cross_entropy": 0.27085188031196594,
+        "balanced_accuracy": 0.8721340169585284,
+        "binary_f1_score": 0.7567567567567568,
+        "disagreement": 0.0825714288013322,
+        "mean_pairwise_js_divergence": 0.049358601083180735,
+        "time_in_seconds": 61.193650875007734,
+        "params": {
+            "lambda_init": 0.9,
+            "lambda_lr": 0.1
+        }
+    },
+    "sweep_lambda_init=0.9__lambda_lr=0.5": {
+        "cross_entropy": 0.2564258277416229,
+        "balanced_accuracy": 0.8732981613124282,
+        "binary_f1_score": 0.7619047619047619,
+        "disagreement": 0.12603571345763548,
+        "mean_pairwise_js_divergence": 0.07663619591455374,
+        "time_in_seconds": 75.79634039697703,
+        "params": {
+            "lambda_init": 0.9,
+            "lambda_lr": 0.5
+        }
+    },
+    "_sweep_time_seconds": 540.0957580289687
+}

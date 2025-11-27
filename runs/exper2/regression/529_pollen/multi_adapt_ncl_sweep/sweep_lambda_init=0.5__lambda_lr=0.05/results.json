@@ -1,0 +1,12 @@
+{
+    "mse": NaN,
+    "rmse": NaN,
+    "mae": NaN,
+    "pairwise_pearson_correlation": 0.0,
+    "mean_variance_around_ensemble": NaN,
+    "time_in_seconds": 26.480273420980666,
+    "params": {
+        "lambda_init": 0.5,
+        "lambda_lr": 0.05
+    }
+}

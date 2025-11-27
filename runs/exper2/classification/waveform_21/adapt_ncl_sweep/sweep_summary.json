@@ -1,0 +1,111 @@
+{
+    "sweep_lambda_init=0.0__lambda_lr=0.0": {
+        "cross_entropy": 0.3066284656524658,
+        "balanced_accuracy": 0.8648080860260402,
+        "macro_f1_score": 0.8646016561081694,
+        "disagreement": 0.026321428761418377,
+        "mean_pairwise_js_divergence": 0.0027562778143744382,
+        "time_in_seconds": 54.94445390102919,
+        "params": {
+            "lambda_init": 0.0,
+            "lambda_lr": 0.0
+        }
+    },
+    "sweep_lambda_init=0.0__lambda_lr=0.1": {
+        "cross_entropy": 0.30654796957969666,
+        "balanced_accuracy": 0.8648379730828525,
+        "macro_f1_score": 0.8646307660123428,
+        "disagreement": 0.029142857329653844,
+        "mean_pairwise_js_divergence": 0.003075832625784512,
+        "time_in_seconds": 53.812302309961524,
+        "params": {
+            "lambda_init": 0.0,
+            "lambda_lr": 0.1
+        }
+    },
+    "sweep_lambda_init=0.0__lambda_lr=0.5": {
+        "cross_entropy": 0.3077855706214905,
+        "balanced_accuracy": 0.8648080860260402,
+        "macro_f1_score": 0.8646016561081694,
+        "disagreement": 0.02646428586116859,
+        "mean_pairwise_js_divergence": 0.0027878135026964757,
+        "time_in_seconds": 54.23037108400604,
+        "params": {
+            "lambda_init": 0.0,
+            "lambda_lr": 0.5
+        }
+    },
+    "sweep_lambda_init=0.5__lambda_lr=0.0": {
+        "cross_entropy": 0.3079037666320801,
+        "balanced_accuracy": 0.8628714047446028,
+        "macro_f1_score": 0.8626795773407218,
+        "disagreement": 0.03307142886998398,
+        "mean_pairwise_js_divergence": 0.004109610312817884,
+        "time_in_seconds": 54.900058852974325,
+        "params": {
+            "lambda_init": 0.5,
+            "lambda_lr": 0.0
+        }
+    },
+    "sweep_lambda_init=0.5__lambda_lr=0.1": {
+        "cross_entropy": 0.3080264925956726,
+        "balanced_accuracy": 0.8648080860260402,
+        "macro_f1_score": 0.8646016561081694,
+        "disagreement": 0.02635714298646365,
+        "mean_pairwise_js_divergence": 0.0028356644823881133,
+        "time_in_seconds": 54.73779814998852,
+        "params": {
+            "lambda_init": 0.5,
+            "lambda_lr": 0.1
+        }
+    },
+    "sweep_lambda_init=0.5__lambda_lr=0.5": {
+        "cross_entropy": 0.30782297253608704,
+        "balanced_accuracy": 0.8648379730828525,
+        "macro_f1_score": 0.8646213416335892,
+        "disagreement": 0.02814285723226411,
+        "mean_pairwise_js_divergence": 0.002849789311377598,
+        "time_in_seconds": 55.85718579404056,
+        "params": {
+            "lambda_init": 0.5,
+            "lambda_lr": 0.5
+        }
+    },
+    "sweep_lambda_init=0.9__lambda_lr=0.0": {
+        "cross_entropy": 0.3232736885547638,
+        "balanced_accuracy": 0.8668161181545542,
+        "macro_f1_score": 0.8666464682390704,
+        "disagreement": 0.11071428603359632,
+        "mean_pairwise_js_divergence": 0.04174688232264349,
+        "time_in_seconds": 60.927232727990486,
+        "params": {
+            "lambda_init": 0.9,
+            "lambda_lr": 0.0
+        }
+    },
+    "sweep_lambda_init=0.9__lambda_lr=0.1": {
+        "cross_entropy": 0.30741527676582336,
+        "balanced_accuracy": 0.865791370195165,
+        "macro_f1_score": 0.8655763629742194,
+        "disagreement": 0.02650000008621386,
+        "mean_pairwise_js_divergence": 0.0028648076030159636,
+        "time_in_seconds": 59.41649971000152,
+        "params": {
+            "lambda_init": 0.9,
+            "lambda_lr": 0.1
+        }
+    },
+    "sweep_lambda_init=0.9__lambda_lr=0.5": {
+        "cross_entropy": 0.3068569600582123,
+        "balanced_accuracy": 0.864787354130908,
+        "macro_f1_score": 0.8645531046656026,
+        "disagreement": 0.026892857226942266,
+        "mean_pairwise_js_divergence": 0.0027554417943714987,
+        "time_in_seconds": 56.815352883946616,
+        "params": {
+            "lambda_init": 0.9,
+            "lambda_lr": 0.5
+        }
+    },
+    "_sweep_time_seconds": 506.2429808169836
+}

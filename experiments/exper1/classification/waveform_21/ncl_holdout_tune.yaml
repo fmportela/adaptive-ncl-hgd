@@ -1,0 +1,87 @@
+description: |
+  Performance of classical NCL on the waveform_21 dataset using holdout evaluation
+  with CV-based hyperparameter tuning.
+
+seed: 2
+run_dir: "./runs/exper1/classification/waveform_21/"
+
+dataset:
+  name: waveform_21
+  task_type: classification
+  local_cache_dir: data/classification/
+
+trainer:
+  name: ncl
+  params:
+    lambda_ncl: 0.2
+    use_dncc: true
+  model:
+    name: mlp
+    params:
+      in_dim: 21
+      out_dim: 3
+      hidden: [64, 32]
+  ensemble:
+    n_models: 5
+  loss:
+    name: cross_entropy
+  optim:
+    name: sgd
+    lr: 0.01
+  fit:
+    task_type: classification
+    n_epochs: 75
+    batch_size: 32
+    val_batch_size: 32
+    normalize: softmax
+    log_level: 40
+    class_w: null
+  callbacks:
+    - name: early_stopping
+      params:
+        monitor: "val_loss"
+        mode: "min"
+        patience: 5
+        min_delta: 0.001
+        restore_best: True
+  
+preprocessing:
+  scaler:
+    name: standard
+
+mode: holdout
+
+modes: 
+  holdout:
+    ratios:
+      train: 0.8
+      val: 0.0
+      test: 0.2
+    stratify: true
+    metrics: [cross_entropy, balanced_accuracy, macro_f1_score]
+    tune:
+      enabled: true
+      cv: 3
+      n_trials: 50
+      timeout: null
+      n_startup_trials: 20
+      metric: cross_entropy
+      direction: minimize
+      prune: false
+      refit_val_ratio: 0.1
+
+param_grid:
+  optim__lr:
+    type: float
+    low: 0.01
+    high: 0.5
+    log: true
+  ens__n_models:
+    type: int
+    low: 3
+    high: 10
+    step: 1
+  lambda_ncl:
+    type: float
+    low: 0.0
+    high: 1.5

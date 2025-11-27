@@ -1,0 +1,111 @@
+{
+    "sweep_lambda_init=0.0__lambda_lr=0.0": {
+        "cross_entropy": 0.23346133530139923,
+        "balanced_accuracy": 0.8844648651326381,
+        "binary_f1_score": 0.7889273356401384,
+        "disagreement": 0.07244444441878134,
+        "mean_pairwise_js_divergence": 0.04585962530432476,
+        "time_in_seconds": 69.27449938800419,
+        "params": {
+            "lambda_init": 0.0,
+            "lambda_lr": 0.0
+        }
+    },
+    "sweep_lambda_init=0.0__lambda_lr=0.1": {
+        "cross_entropy": 0.2553722858428955,
+        "balanced_accuracy": 0.8827186486017883,
+        "binary_f1_score": 0.7808219178082192,
+        "disagreement": 0.07794444480290015,
+        "mean_pairwise_js_divergence": 0.045705322383178607,
+        "time_in_seconds": 64.31985621497734,
+        "params": {
+            "lambda_init": 0.0,
+            "lambda_lr": 0.1
+        }
+    },
+    "sweep_lambda_init=0.0__lambda_lr=0.5": {
+        "cross_entropy": 0.25182080268859863,
+        "balanced_accuracy": 0.8791725493110082,
+        "binary_f1_score": 0.7766323024054983,
+        "disagreement": 0.0807222222081489,
+        "mean_pairwise_js_divergence": 0.049015736828247704,
+        "time_in_seconds": 64.74792713101488,
+        "params": {
+            "lambda_init": 0.0,
+            "lambda_lr": 0.5
+        }
+    },
+    "sweep_lambda_init=0.5__lambda_lr=0.0": {
+        "cross_entropy": 0.2753533720970154,
+        "balanced_accuracy": 0.8768442606032084,
+        "binary_f1_score": 0.7661016949152543,
+        "disagreement": 0.12711111187107033,
+        "mean_pairwise_js_divergence": 0.08591773060874806,
+        "time_in_seconds": 60.8604802400223,
+        "params": {
+            "lambda_init": 0.5,
+            "lambda_lr": 0.0
+        }
+    },
+    "sweep_lambda_init=0.5__lambda_lr=0.1": {
+        "cross_entropy": 0.26356229186058044,
+        "balanced_accuracy": 0.8691163236156176,
+        "binary_f1_score": 0.7665505226480837,
+        "disagreement": 0.08772222232073545,
+        "mean_pairwise_js_divergence": 0.05530171267067393,
+        "time_in_seconds": 62.46215109201148,
+        "params": {
+            "lambda_init": 0.5,
+            "lambda_lr": 0.1
+        }
+    },
+    "sweep_lambda_init=0.5__lambda_lr=0.5": {
+        "cross_entropy": 0.2544534206390381,
+        "balanced_accuracy": 0.8750443778432782,
+        "binary_f1_score": 0.7697594501718213,
+        "disagreement": 0.11027777877946694,
+        "mean_pairwise_js_divergence": 0.07392480617596044,
+        "time_in_seconds": 63.41643302101875,
+        "params": {
+            "lambda_init": 0.5,
+            "lambda_lr": 0.5
+        }
+    },
+    "sweep_lambda_init=0.9__lambda_lr=0.0": {
+        "cross_entropy": 0.28006038069725037,
+        "balanced_accuracy": 0.8589527654620662,
+        "binary_f1_score": 0.7806691449814126,
+        "disagreement": 0.0671111119704114,
+        "mean_pairwise_js_divergence": 0.04734006881092986,
+        "time_in_seconds": 62.88136022002436,
+        "params": {
+            "lambda_init": 0.9,
+            "lambda_lr": 0.0
+        }
+    },
+    "sweep_lambda_init=0.9__lambda_lr=0.1": {
+        "cross_entropy": 0.24881350994110107,
+        "balanced_accuracy": 0.8631882693879573,
+        "binary_f1_score": 0.7632508833922261,
+        "disagreement": 0.06772222245732944,
+        "mean_pairwise_js_divergence": 0.04582228237349126,
+        "time_in_seconds": 62.08474251301959,
+        "params": {
+            "lambda_init": 0.9,
+            "lambda_lr": 0.1
+        }
+    },
+    "sweep_lambda_init=0.9__lambda_lr=0.5": {
+        "cross_entropy": 0.2513427734375,
+        "balanced_accuracy": 0.8738265672602977,
+        "binary_f1_score": 0.7762237762237763,
+        "disagreement": 0.061666667047474116,
+        "mean_pairwise_js_divergence": 0.04289367748424411,
+        "time_in_seconds": 61.19574354495853,
+        "params": {
+            "lambda_init": 0.9,
+            "lambda_lr": 0.5
+        }
+    },
+    "_sweep_time_seconds": 571.845115934033
+}

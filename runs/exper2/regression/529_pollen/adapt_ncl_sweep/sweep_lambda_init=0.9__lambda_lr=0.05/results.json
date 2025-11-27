@@ -1,0 +1,12 @@
+{
+    "mse": 2.1954472064971924,
+    "rmse": 1.4817041158676147,
+    "mae": 1.159221887588501,
+    "pairwise_pearson_correlation": 0.9932195550922037,
+    "mean_variance_around_ensemble": 0.004368891787266237,
+    "time_in_seconds": 15.373705134959891,
+    "params": {
+        "lambda_init": 0.9,
+        "lambda_lr": 0.05
+    }
+}

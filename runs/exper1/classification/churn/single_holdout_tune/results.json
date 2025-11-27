@@ -1,0 +1,14 @@
+{
+    "cross_entropy": 0.24498549103736877,
+    "balanced_accuracy": 0.7938515014159628,
+    "binary_f1_score": 0.7112970711297071,
+    "time_in_seconds": 249.48555972300528,
+    "best_hyperparameters": {
+        "optim__lr": 0.30352473388522405,
+        "model__hidden": "64"
+    },
+    "hyperparameter_importances": {
+        "optim__lr": 0.9636540192644144,
+        "model__hidden": 0.036345980735585676
+    }
+}

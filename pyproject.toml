@@ -1,0 +1,45 @@
+[project]
+name = "Adaptive-Negative-Correlation-Learning-Via-Online-Hypergradient-Descent"
+version = "0.0.1"
+description = "Master thesis"
+authors = [
+    {name = "Frederico Portela", email = "fmp.portela100@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12, <3.13"
+dependencies = [
+    "ipywidgets>=8.1.5",
+    "matplotlib>=3.10.0",
+    "numpy>=1.26.3",
+    "optuna>=4.2.1",
+    "pmlb>=1.0.1.post3",
+    "pydantic>=2.11.9",
+    "scikit-learn>=1.6.1",
+    "torch>=2.5.1",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cpu"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "mypy>=1.14.1",
+    "pre-commit>=4.1.0",
+    "pytest>=8.3.4",
+    "ruff>=0.9.4",
+]
+
+[tool.ruff]
+line-length = 79

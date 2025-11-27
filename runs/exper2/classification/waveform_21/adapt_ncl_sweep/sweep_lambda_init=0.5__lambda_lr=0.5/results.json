@@ -1,0 +1,12 @@
+{
+    "cross_entropy": 0.30782297253608704,
+    "balanced_accuracy": 0.8648379730828525,
+    "macro_f1_score": 0.8646213416335892,
+    "disagreement": 0.02814285723226411,
+    "mean_pairwise_js_divergence": 0.002849789311377598,
+    "time_in_seconds": 55.85718579404056,
+    "params": {
+        "lambda_init": 0.5,
+        "lambda_lr": 0.5
+    }
+}

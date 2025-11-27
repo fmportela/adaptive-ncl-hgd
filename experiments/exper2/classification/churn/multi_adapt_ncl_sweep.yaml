@@ -1,0 +1,68 @@
+description: |
+  Hyperparameter sweep of multi-lambda adaptive NCL on the churn dataset.
+
+seed: 1
+run_dir: "./runs/exper2/classification/churn/"
+
+dataset:
+  name: churn
+  task_type: classification
+  local_cache_dir: data/classification/
+
+trainer:
+  name: multi_adaptive_ncl
+  params:
+    lambda_init: 0.1
+    lambda_lr: 0.01
+    lambda_step_every: 1
+    project_lambda_nonneg: true
+    use_dncc: true
+    hvp_damping: 0.1
+  model:
+    name: mlp
+    params:
+      in_dim: 20
+      out_dim: 2
+      hidden: [64, 32]
+  ensemble:
+    n_models: 9
+  loss:
+    name: cross_entropy
+  optim:
+    name: custom
+    lr: 0.30911518431230883
+  fit:
+    task_type: classification
+    n_epochs: 30
+    batch_size: 32
+    val_batch_size: 32
+    normalize: softmax
+    log_level: 40
+    class_w: null
+  callbacks:
+    - name: early_stopping
+      params:
+        monitor: "val_loss"
+        mode: "min"
+        patience: 30
+        min_delta: 0.001
+        restore_best: True
+  
+preprocessing:
+  scaler:
+    name: standard
+
+mode: sweep
+
+modes: 
+  sweep:
+    ratios:
+      train: 0.7
+      val: 0.1
+      test: 0.2
+    stratify: true
+    metrics: [cross_entropy, balanced_accuracy, binary_f1_score]
+    diversity_metrics: [disagreement, mean_pairwise_js_divergence]
+    params:
+      lambda_init: [0.0, 0.5, 0.9]
+      lambda_lr: [0.0, 0.1, 0.5]

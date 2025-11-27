@@ -1,0 +1,14 @@
+{
+    "mse": 2.252007007598877,
+    "rmse": 1.5006688833236694,
+    "mae": 1.1700758934020996,
+    "time_in_seconds": 637.6690630100002,
+    "best_hyperparameters": {
+        "optim__lr": 0.004970465150143421,
+        "model__hidden": "64x32"
+    },
+    "hyperparameter_importances": {
+        "optim__lr": 0.7317240527655197,
+        "model__hidden": 0.26827594723448034
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "mse": 2.1811764240264893,
+    "rmse": 1.476880669593811,
+    "mae": 1.15508234500885,
+    "time_in_seconds": 3429.8054144450007,
+    "best_hyperparameters": {
+        "optim__lr": 0.001256500053312859,
+        "ens__n_models": 7,
+        "lambda_ncl": 0.16598738410701083
+    },
+    "hyperparameter_importances": {
+        "optim__lr": 0.7979525187938442,
+        "ens__n_models": 0.12810237240551628,
+        "lambda_ncl": 0.07394510880063958
+    }
+}
